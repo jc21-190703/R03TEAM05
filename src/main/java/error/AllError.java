@@ -27,8 +27,23 @@ public class AllError extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/WEB-INF/allError.jsp").forward(request, response);
+	   
+		try {
+			String foodName = request.getParameter("foodName");
+			
+			if (foodName == "") {
+				request.getRequestDispatcher("notEnteredError.jsp").forward(request, response);
+				
+			} else if(foodName.length() > 30) {
+				
+				request.getRequestDispatcher("wordCountError.jsp").forward(request, response);
+			}
+			
+	    } catch (Exception e) {
+			request.getRequestDispatcher("allError.jsp").forward(request, response);
+		}
 	}
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
