@@ -37,10 +37,12 @@ public class AllError extends HttpServlet {
 			} else if(foodName.length() > 30) {
 				
 				request.getRequestDispatcher("wordCountError.jsp").forward(request, response);
+			} else if((foodName == "")&&(foodName.length() > 30)) {
+				request.getRequestDispatcher("allError.jsp").forward(request, response);
 			}
 			
 	    } catch (Exception e) {
-			request.getRequestDispatcher("allError.jsp").forward(request, response);
+	    	request.getRequestDispatcher("/WEB-INF/jsp/unexpectedError.jsp").forward(request, response);
 		}
 	}
 
