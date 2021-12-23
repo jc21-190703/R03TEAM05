@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="insert.css">
+<link rel="stylesheet" href="../css/insert.css">
 <title>登録画面</title>
 </head>
 <body>
-<form  action = "/insert.java">
+
 	<table align="center" border="1" style="border-collapse: collapse">
 		<tr>
 			<th>画</th>
@@ -25,7 +25,7 @@
 			<td><input type="text" name="name"></td>
 
 			<td><input type="date" value="today" id="today" min="2021-11-01"
-				max="2022-02-28"> <script src="today.js"></script></td>
+				max="2022-02-28"> <script src="../../webapp/WEB-INF/js/TDjs/today.js"></script></td>
 
 			<td>
 				<div class="container">
@@ -35,7 +35,7 @@
 						<input type="text" value="0" class="inputtext" id="textbox">
 						<button class="button" id="up">＋</button>
 					</div>
-				</div> <script src="main.js"></script>
+				</div> <script src="../../js/NCjs/main.js"></script>
 			</td>
 		</tr>
 <%--///////////////////////////////////////////////////////////////////////////////// --%>
@@ -57,7 +57,7 @@
 						<input type="text" value="0" class="inputtext" id="textbox1">
 						<button class="button" id="up1">＋</button>
 					</div>
-				</div><script src="main1.js"></script>
+				</div><script src="/src/main/webapp/WEB-INF/js/NCjs/main1.js"></script>
 			</td>
 		</tr>
 <%--///////////////////////////////////////////////////////////////////////////////// --%>
@@ -194,14 +194,17 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="4">
-				<button type="submit" class="btn btn-primary aaa">これで応募</button>
-			</td>
+		<td colspan="4">
+		<button type="submit" class="btn btn-primary aaa">これで応募</button>
+		</td>
 		</tr>
 	</table>
 <%--///////////////////////////////////////////////////////////////////////////////// --%>
 	
+	<form  action = "/insert.java">
 	
+				
+			
 	</form>
 </body>	
 </html>
