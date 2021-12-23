@@ -40,7 +40,7 @@ public class tourokukakunin extends HttpServlet {
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/webapp","webapp","webapp");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
 			java.sql.Statement st = connection.createStatement();
 			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
 			
@@ -68,10 +68,10 @@ public class tourokukakunin extends HttpServlet {
 			request.setAttribute("list", list);
 			request.getRequestDispatcher("/WEB-INF/jsp/tourokukakuninn.jsp").forward(request, response);
 		} catch (ClassNotFoundException e) {
-			// TODO 自動生成された catch ブロック
+			// TODO 閾ｪ蜍慕函謌舌＆繧後◆ catch 繝悶Ο繝�繧ｯ
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO 自動生成された catch ブロック
+			// TODO 閾ｪ蜍慕函謌舌＆繧後◆ catch 繝悶Ο繝�繧ｯ
 			e.printStackTrace();
 		}
 	}
