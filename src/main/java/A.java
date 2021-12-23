@@ -43,19 +43,16 @@ public class A extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		final String driverName = "oracle.jdbc.driver.OracleDriver";
-		final String url = "jdbc:oracle:thin:@192.168.54.222:1521/pdborcl";
-		final String id = "OUBO";
-		final String pass = "Oubo2021";
+		//final String driverName = "oracle.jdbc.driver.OracleDriver";
+		//final String url = "jdbc:oracle:thin:@192.168.54.222:1521/pdborcl";
+		//final String id = "OUBO";
+		//final String pass = "Oubo2021";
 
 		try {
-			Class.forName(driverName);
-			Connection connection=DriverManager.getConnection(url,id,pass);
-			PreparedStatement st =
-					connection.prepareStatement(
-							"select NumA,NumB,eMail from OUBO"
-						);
-			ResultSet result = st.executeQuery();
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connection=DriverManager.getConnection("jdbc.mysql://192.168.54.191/webapp","webapp","webapp");
+			java.sql.Statement st =connection.createStatement();
+			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
 
 			List<String[]> list = new ArrayList<>();
 			while( result.next() == true) {
