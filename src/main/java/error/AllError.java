@@ -30,6 +30,7 @@ public class AllError extends HttpServlet {
 	   
 		try {
 			String foodName = request.getParameter("foodName");
+			String quantity = request.getParameter("quantity");
 			
 			if (foodName == "") {
 				request.getRequestDispatcher("notEnteredError.jsp").forward(request, response);
@@ -37,15 +38,19 @@ public class AllError extends HttpServlet {
 			} else if(foodName.length() > 30) {
 				
 				request.getRequestDispatcher("wordCountError.jsp").forward(request, response);
-			} else if((foodName == "")&&(foodName.length() > 30)) {
+				
+			}else if(quantity.length() >= 99) {
+				request.getRequestDispatcher("specifiedNumberError.jsp").forward(request, response);
+			
+			}else if((foodName == "")&&(foodName.length() > 30)&&(quantity.length() >=99)) {
 				request.getRequestDispatcher("allError.jsp").forward(request, response);
 			}
 			
 	    } catch (Exception e) {
 	    	request.getRequestDispatcher("/WEB-INF/jsp/unexpectedError.jsp").forward(request, response);
-		}
+	    }
 	}
-
+	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
