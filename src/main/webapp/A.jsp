@@ -7,9 +7,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<%-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">--%>
 
-<title>OracleJDBC01</title>
+<title>home</title>
 </head>
 <%
 Optional<List<String[]>>optList = Optional.ofNullable((List<String[]>)request.getAttribute("list"));
@@ -20,7 +20,7 @@ if(optList.isPresent()){
 %>
 <body>
 
-<H1>OracleJDBC01</H1>
+<H1>冷蔵庫管理</H1>
 <table class="table">
   <thead> 
     <th></th>
@@ -42,10 +42,11 @@ if(optList.isPresent()){
     
   </tbody>
 </table>
-<form method="post" action="./toroku">
-    <button type="submit" class="btn btn-primary">登録</button>
-    <form method="post" action="./hensyu">
-    <button type="submit" class="btn btn-primary">編集</button>
+<form method="get" action="./insertCall"> 
+    <button type="submit" class="btn btn-primary">登録ページ</button></form>
+    <form method="get" action="./editPage"> 
+    <button type="submit" class="btn btn-primary">編集ページ</button></form>
+     <%--<button onclick="location.href='/insertCall'">登録ページ</button>--%>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
