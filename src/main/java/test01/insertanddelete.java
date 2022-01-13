@@ -80,9 +80,9 @@ public class insertanddelete extends HttpServlet {
 
 			}
 
-			request.getRequestDispatcher("/WEB-INF/jsp/.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/jsp/aaaaaa.jsp").forward(request, response);
 		} catch (Exception e) {
-			// TODO 閾ｪ蜍慕函謌舌＆繧後◆ catch 繝悶Ο繝�繧ｯ
+			
 
 		}
 
