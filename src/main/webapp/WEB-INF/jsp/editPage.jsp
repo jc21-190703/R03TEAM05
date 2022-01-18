@@ -25,11 +25,11 @@ if(optList.isPresent()){
 		<img src="./image/editHeader.svg">
 	</div>
 	
-	<form method="get" action="あとでいれます" class="inputable">
+	<%-- <form method="get" action="あとでいれます" class="inputable"> --%>
 		<table class="foodTable">
 			<thead class="header">
 				<tr>
-					<th></th>
+					<th>No</th>
 					<th>名前</th>
 					<th>期限</th>
 					<th>数</th>
@@ -59,11 +59,11 @@ if(optList.isPresent()){
 
 		<table class="buttonTable">
 			<tr>
-				<td><a href="あとで"><button id="button" class="returnButton" type="button">戻る</button></a></td>
+				<td><a href="http://localhost:8080/Refrigerator/A"><button id="button" class="returnButton" type="button">戻る</button></a></td>
 				<td><button type="submit" id="button" class="nextButton">決定</button></td>
 			</tr>
 		</table>
-	</form>
+	<%-- </form> --%>>
 	
 </body>
 </html>
