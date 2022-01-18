@@ -31,25 +31,17 @@ public class editPage extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//DB接続に必要なやつ
-		final String driverName="あとで入れます";
-		final String url="あとで(ry";
-		final String id="あとで(ry";
-		final String pass="あとで(ry";
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 //いつも書いてるやつ
 		response.setContentType("text/html;charset=utf-8");
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out=response.getWriter();
 		try {
 //DB接続
-		Class.forName(driverName);
-		Connection conn=DriverManager.getConnection(url,id,pass);
-		PreparedStatement st=conn.prepareStatement(
-				"select iconNo,foodName,expryDate,quantity from mst_food"
-				);
-		ResultSet result=st.executeQuery();
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connection=DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
+			java.sql.Statement st =connection.createStatement();
+			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
 		
 		List<String[]>list=new ArrayList<>();
 		while(result.next()==true) {
@@ -69,7 +61,8 @@ public class editPage extends HttpServlet {
 		}
 		
 		request.setAttribute("list", list);
-		request.getRequestDispatcher("/WEB-INF/jsp/editPage.jsp");
+		request.getRequestDispatcher("/WEB-INF/jsp/editPage.jsp")
+		.forward(request, response);
 		}catch(Exception e) {
 			e.printStackTrace(out);
 		}
