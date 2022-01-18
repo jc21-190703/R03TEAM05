@@ -23,7 +23,7 @@ if(optList.isPresent()){
 <H1>冷蔵庫管理</H1>
 <table class="table">
   <thead> 
-    <th></th>
+    <th>no</th>
     <th>名前</th>
     <th>期限</th>
     <th>数</th>
@@ -35,6 +35,7 @@ if(optList.isPresent()){
 <td><%=s[0] %></td>
 <td><%=s[1] %></td>
 <td><%=s[2] %></td>
+<td><%=s[3] %></td>
 
     </tr>
     <%} %>
