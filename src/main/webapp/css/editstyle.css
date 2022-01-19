@@ -9,8 +9,13 @@
 	color:white;
 }
 
-.buttontable{
-	text-align:center;
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.foodtable th, .foodtable td {
+	border: solid 1px black;
 }
 
 .underbutton{

@@ -25,18 +25,17 @@ if(optList.isPresent()){
 		<P><img src="./img/editHeader.svg"></P>
 	</div>
 	
-	<%-- <form method="get" action="あとでいれます" class="inputable"> --%>
-		<table align="center">
+	<form method="get" action="あとでいれます" class="inputable">
+		<table class="foodtable" align="center">
 			<thead class="tableheader">
 				<tr>
-					<th>アイコン</th>
+					<th>イラスト</th>
 					<th>名前</th>
 					<th>期限</th>
 					<th>数</th>
 				</tr>
 			</thead>
 			<tbody>
-				<%! int count = 0; %>
 				<% for (String[] s : list){ %>
     				<tr>
 						<td><%=s[0] %></td>
@@ -61,7 +60,7 @@ if(optList.isPresent()){
 				<td><button type="submit" class="underbutton" id="nextbutton">決定</button></td>
 			</tr>
 		</table>
-	<%-- </form> --%>
+	</form>
 	
 </body>
 </html>
