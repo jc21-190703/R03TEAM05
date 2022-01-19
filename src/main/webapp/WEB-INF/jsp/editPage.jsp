@@ -21,6 +21,21 @@ if(optList.isPresent()){
 %>
 
 <body bgcolor="#87cefa">
+	<div class="popup" id="popup-id">
+		<div class="popup-inner" id="wpopup-inner">
+			<img src="<%=request.getContextPath()%>/img/image01.jpg"
+				onclick="returnData('img/image01.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image02.jpg"
+				onclick="returnData('img/image02.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image03.jpg"
+				onclick="returnData('img/image03.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image04.jpg"
+				onclick="returnData('img/image04.jpg');">
+			<button type="button" onclick="popupClose();">キャンセル</button>
+		</div>
+		<div class="popup-back" onclick="popupClose();"></div>
+	</div>
+	
 	<div class="header">
 		<P><img src="./img/editHeader.svg"></P>
 	</div>
@@ -38,7 +53,12 @@ if(optList.isPresent()){
 			<tbody>
 				<% for (String[] s : list){ %>
     				<tr>
-						<td><%=s[0] %></td>
+						<td>
+							<label for="p00s" class="showHand" id="p00g">＋</label> 
+							<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
+							<input type="text" id="p00s" onclick="showDialog(event);"class="z">
+							<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
+						</td>
 						<td><input type="text" value=<%=s[1] %> name="foodName" id="foodmane"></td>
 						<td><input type="date" value=<%=s[2] %> name="expryDate" id="expryDate"></td>
 						<td>
