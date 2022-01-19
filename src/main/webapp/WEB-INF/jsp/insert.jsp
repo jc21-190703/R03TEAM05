@@ -10,7 +10,7 @@
 <title>登録画面</title>
 
 </head>
-<body>
+<body bgcolor="#87cefa">
 	<div class="popup" id="popup-id">
 		<div class="popup-inner" id="wpopup-inner">
 			<img src="<%=request.getContextPath()%>/img/image01.jpg"
@@ -27,13 +27,15 @@
 	</div>
 	<form action="<%=request.getContextPath()%>/tourokukakunin">
 		<table align="center" border="1" style="border-collapse: collapse">
-
-			<tr>
-				<th>画</th>
-				<th>名前</th>
-				<th>期限</th>
-				<th>数</th>
-			</tr>
+			<thead class="tableheader">
+				<tr>
+					<th>アイコン</th>
+					<th>名前</th>
+					<th>期限</th>
+					<th>数</th>
+				</tr>
+			</thead>
+			<tbody>
 			<%--///////////////////////////////////////////////////////////////////////////////// --%>
 			<tr>
 
@@ -280,11 +282,15 @@
 					<script src="<%=request.getContextPath()%>/js/NCjs/main7.js"></script>
 				</td>
 			</tr>
-		</table>
 		<%--///////////////////////////////////////////////////////////////////////////////// --%>
-		<td><a href="http://localhost:8080/Refrigerator/A"><button id="button" class="returnButton" type="button">戻る</button></a></td>
-		<td><a href="http://localhost:8080/Refrigerator/A"><button id="button" class="returnButton" type="button">戻る</button></a></td>
-		<button type="submit" class="btn btn-primary">これで応募</button>
+		</tbody>
+		</table>
+		<table align="center">
+			<tr>
+		<td><a href="http://localhost:8080/Refrigerator/A"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
+		<td><button type="submit" class="underbutton" id="nextbutton">決定</button></td>
+			</tr>
+		</table>
 	</form>
 </body>
 </html>
