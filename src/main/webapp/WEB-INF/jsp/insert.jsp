@@ -282,7 +282,8 @@
 			</tr>
 		</table>
 		<%--///////////////////////////////////////////////////////////////////////////////// --%>
-
+		<td><a href="http://localhost:8080/Refrigerator/A"><button id="button" class="returnButton" type="button">戻る</button></a></td>
+		<td><a href="http://localhost:8080/Refrigerator/A"><button id="button" class="returnButton" type="button">戻る</button></a></td>
 		<button type="submit" class="btn btn-primary">これで応募</button>
 	</form>
 </body>
