@@ -40,15 +40,13 @@
 				<td>
 					<label for="p00s" class="showHand" id="p00g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p00s" onclick="showDialog(event);">
+					<input type="text" id="p00s" onclick="showDialog(event);"class="z">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				<td><input type="text" name="name"></td>
 
 				<td>
 					<input type="date" value="today" id="today"	min="2021-11-01" max="2022-02-28"> 
@@ -72,15 +70,14 @@
 				<td>
 					<label for="p01s" class="showHand" id="p01g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p01s" onclick="showDialog(event);">
+		
+					<input type="text" id="p01s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				<td><input type="text" name="name"></td>
 
 				<td>
 					<input type="date" value="today" id="today1" min="2021-11-01" max="2022-02-28">
@@ -104,15 +101,14 @@
 				<td>
 					<label for="p02s" class="showHand" id="p02g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p02s" onclick="showDialog(event);">
+				
+					<input type="text" id="p02s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				<td><input type="text" name="name"></td> 
 
 				<td>
 					<input type="date" value="today" id="today2" min="2021-11-01" max="2022-02-28">
@@ -137,15 +133,14 @@
 				<td>
 					<label for="p03s" class="showHand" id="p03g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p03s" onclick="showDialog(event);">
+				
+					<input type="text" id="p03s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+			 <td><input type="text" name="name"></td> 
 
 				<td>
 					<input type="date" value="today" id="today3" min="2021-11-01" max="2022-02-28">
@@ -169,15 +164,14 @@
 				<td>
 					<label for="p04s" class="showHand" id="p04g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p04s" onclick="showDialog(event);">
+				
+					<input type="text" id="p04s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				<td><input type="text" name="name"></td> 
 
 				<td>
 					<input type="date" value="today" id="today4" min="2021-11-01" max="2022-02-28">
@@ -201,15 +195,14 @@
 				<td>
 					<label for="p05s" class="showHand" id="p05g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p05s" onclick="showDialog(event);">
+				
+					<input type="text" id="p05s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				<td><input type="text" name="name"></td> 
 
 				<td><input type="date" value="today" id="today5"
 					min="2021-11-01" max="2022-02-28">
@@ -232,15 +225,14 @@
 				<td>
 					<label for="p06s" class="showHand" id="p06g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p06s" onclick="showDialog(event);">
+				
+					<input type="text" id="p06s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+			 <td><input type="text" name="name"></td> 
 
 				<td><input type="date" value="today" id="today6"
 					min="2021-11-01" max="2022-02-28">
@@ -263,15 +255,14 @@
 				<td>
 					<label for="p07s" class="showHand" id="p07g">＋</label> 
 					<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-				</td>
-				<td>
-					<input type="text" id="p07s" onclick="showDialog(event);">
+				
+					<input type="text" id="p07s" onclick="showDialog(event);"class="z"">
 					<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 				</td>
 				
 
 
-				<%-- <td><input type="text" name="name"></td> --%>
+				 <td><input type="text" name="name"></td> 
 
 				<td><input type="date" value="today" id="today7"
 					min="2021-11-01" max="2022-02-28">
