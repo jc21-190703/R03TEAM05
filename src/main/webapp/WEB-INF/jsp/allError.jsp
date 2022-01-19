@@ -11,8 +11,10 @@
 </head>
  <body bgcolor="#87cefa">
         <div class="psi"> 
-                <p><img src="./image/mojisuover.svg" width=800 height=400></p>
-                <p><img src="./image/NotEnteredError.svg" width=800 height=400></p>
+                <p><img src="./img/mojisuover.svg" width=800 height=400></p>
+                <p><img src="./img/NotEnteredError.svg" width=800 height=400></p>
+                <p><img src="./img/NumberOver.svg" width=1000 height=400></p>
+                <p><img src="./img/UnexpectedError.svg" width=1000 height=400></p>
 		</div>
 		<div class="area">
 				<a href="javascript:history.back()"><button class ="button" type="button">戻る</button></a>
