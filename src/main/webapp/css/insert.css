@@ -80,3 +80,7 @@ th, td {    /* テーブル表示　セルに罫線を引く */
     z-index: 1;
     cursor: pointer;
 }
+
+.z{
+	display:none;
+}
