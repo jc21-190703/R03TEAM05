@@ -56,11 +56,13 @@ public class A extends HttpServlet {
 
 			List<String[]> list = new ArrayList<>();
 			while( result.next() == true) {
-				String[] s = new String[3];				
+				String[] s = new String[4];				
 				
-				s[0]=result.getString("NumA");
-				s[1]=result.getString("NumB");
-				s[2]=result.getString("eMail");			
+				s[0]=result.getString("iconNo");
+				s[1]=result.getString("foodName");
+				s[2]=result.getString("expryDate");	
+				s[3]=result.getString("quantity");
+				
 				
 				list.add(s);
 				//System.out.println(result.getString("X"));
@@ -69,6 +71,7 @@ public class A extends HttpServlet {
 					System.out.println(s[0]);
 					System.out.println(s[1]);
 					System.out.println(s[2]);
+					System.out.println(s[3]);
 				}
 				
 				

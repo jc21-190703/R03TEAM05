@@ -10,7 +10,7 @@
 <title>編集画面</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/editstyle.css">
 
 <%
 Optional<List<String[]>>optList = Optional.ofNullable((List<String[]>)request.getAttribute("list"));
@@ -21,26 +21,44 @@ if(optList.isPresent()){
 %>
 
 <body bgcolor="#87cefa">
+	<div class="popup" id="popup-id">
+		<div class="popup-inner" id="wpopup-inner">
+			<img src="<%=request.getContextPath()%>/img/image01.jpg"
+				onclick="returnData('img/image01.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image02.jpg"
+				onclick="returnData('img/image02.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image03.jpg"
+				onclick="returnData('img/image03.jpg');"> <img
+				src="<%=request.getContextPath()%>/img/image04.jpg"
+				onclick="returnData('img/image04.jpg');">
+			<button type="button" onclick="popupClose();">キャンセル</button>
+		</div>
+		<div class="popup-back" onclick="popupClose();"></div>
+	</div>
+	
 	<div class="header">
-		<img src="./image/editHeader.svg">
+		<P><img src="./img/editHeader.svg"></P>
 	</div>
 	
 	<form method="get" action="あとでいれます" class="inputable">
-		<table class="foodTable">
-			<thead class="header">
+		<table class="foodtable" align="center">
+			<thead class="tableheader">
 				<tr>
-					<th></th>
+					<th>イラスト</th>
 					<th>名前</th>
 					<th>期限</th>
 					<th>数</th>
 				</tr>
 			</thead>
 			<tbody>
-				<%! int count = 0; %>
 				<% for (String[] s : list){ %>
     				<tr>
-   						<td><%=++count %>
-						<td><%=s[0] %></td>
+						<td>
+							<label for="p00s" class="showHand" id="p00g">＋</label> 
+							<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
+							<input type="text" id="p00s" onclick="showDialog(event);"class="z">
+							<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
+						</td>
 						<td><input type="text" value=<%=s[1] %> name="foodName" id="foodmane"></td>
 						<td><input type="date" value=<%=s[2] %> name="expryDate" id="expryDate"></td>
 						<td>
@@ -53,14 +71,13 @@ if(optList.isPresent()){
 						</td>
     				</tr>
 	    		<%} %>
-	    		<%count=0; %>
 			</tbody>
 		</table>
 
-		<table class="buttonTable">
+		<table align="center">
 			<tr>
-				<td><a href="あとで"><button id="button" class="returnButton" type="button">戻る</button></a></td>
-				<td><button type="submit" id="button" class="nextButton">決定</button></td>
+				<td><a href="http://localhost:8080/Refrigerator/A"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
+				<td><button type="submit" class="underbutton" id="nextbutton">決定</button></td>
 			</tr>
 		</table>
 	</form>
