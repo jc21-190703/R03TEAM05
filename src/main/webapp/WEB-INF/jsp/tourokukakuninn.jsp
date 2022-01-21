@@ -27,22 +27,77 @@ if (optList.isPresent()) {
 %>
 <body>
 
-	<H1>OUBO</H1>
+	<H1>Refrigerator</H1>
 	<table class="table">
 		<thead>
-			<th>結果</th>
+			<th>登録内容</th>
 		</thead>
 		<tbody>
 
 			<%
-			for (String[] s : list) {
+			for (String[] a : list) {
 			%>
 			<tr>
-				<td><%=Arrays.toString(s)%></td>
+				<td><%=Arrays.toString(a)%></td>
 			</tr>
 			<%
 			}
 			%>
+			<%
+			for (String[] b : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(b)%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			for (String[] c : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(c)%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			for (String[] d : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(d)%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			for (String[] e : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(e)%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			for (String[] f : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(f)%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			for (String[] g : list) {
+			%>
+			<tr>
+				<td><%=Arrays.toString(g)%></td>
+			</tr>
+			<%
+			}
+			%>
+			
 		</tbody>
 	</table>
 
@@ -54,8 +109,8 @@ if (optList.isPresent()) {
 
 
 			<h2>入力内容の確認</h2>
-			<form action="/登録画面のサーブレット">
-
+			<form action="/delete">
+				
 				<button type="submit" class="btn btn-primary">戻る</button>
 			</form>
 
