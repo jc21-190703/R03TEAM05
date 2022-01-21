@@ -1,3 +1,4 @@
+package login;
 
 
 import java.io.IOException;
@@ -8,19 +9,35 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class insert
+ * Servlet implementation class Product
  */
-@WebServlet("/insert")
-public class insert extends HttpServlet {
+@WebServlet("/Product")
+public class Product extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public insert() {
-        super();
+	private int id;
+	private String name;
+	private int price;public int getId() 
+	{
+		return id;
+		}	
+		public String getName() {
+		return name;
+		}
+		public int getPrice() {
+		return price;
+		}public void setId(int id) 
+		{
+			this.id = id;
+		}public void setName(String name) 
+		{
+		this.name = name;
+		}public void setPrice(int price) {this.price = price;
+		}
+    //public Product() {
+        //super();
         // TODO Auto-generated constructor stub
-    }
+    
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
