@@ -25,7 +25,7 @@
 		</div>
 		<div class="popup-back" onclick="popupClose();"></div>
 	</div>
-	<form action="<%=request.getContextPath()%>/tourokukakunin">
+	<form action="<%=request.getContextPath()%>/InsertServelet">
 		<table align="center" border="1" style="border-collapse: collapse">
 			<thead class="tableheader">
 				<tr>
