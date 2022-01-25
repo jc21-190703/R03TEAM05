@@ -71,7 +71,7 @@ public class insertanddelete extends HttpServlet {
 
 			st.close();
 			connection.close();
-			String sql = "delete FROM ";
+			String sql = "delete FROM sub";
 			if (sql != "") {
 				st = connection.prepareStatement(sql);
 				st.close();

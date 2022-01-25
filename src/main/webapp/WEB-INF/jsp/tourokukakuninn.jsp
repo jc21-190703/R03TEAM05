@@ -43,60 +43,7 @@ if (optList.isPresent()) {
 			<%
 			}
 			%>
-			<%
-			for (String[] b : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(b)%></td>
-			</tr>
-			<%
-			}
-			%>
-			<%
-			for (String[] c : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(c)%></td>
-			</tr>
-			<%
-			}
-			%>
-			<%
-			for (String[] d : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(d)%></td>
-			</tr>
-			<%
-			}
-			%>
-			<%
-			for (String[] e : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(e)%></td>
-			</tr>
-			<%
-			}
-			%>
-			<%
-			for (String[] f : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(f)%></td>
-			</tr>
-			<%
-			}
-			%>
-			<%
-			for (String[] g : list) {
-			%>
-			<tr>
-				<td><%=Arrays.toString(g)%></td>
-			</tr>
-			<%
-			}
-			%>
+			
 			
 		</tbody>
 	</table>
@@ -109,12 +56,12 @@ if (optList.isPresent()) {
 
 
 			<h2>入力内容の確認</h2>
-			<form action="/delete">
+			<form action="<%=request.getContextPath()%>/insertanddelete">
 				
 				<button type="submit" class="btn btn-primary">戻る</button>
 			</form>
 
-			<form action="/insert and delete">
+			<form action="<%=request.getContextPath()%>/A">
 				<button type="submit" class="btn btn-primary">決定</button>
 			</form>
 		</div>
