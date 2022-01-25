@@ -47,17 +47,19 @@ if(optList.isPresent()){
   </tbody>
 </table>
 <table align="center">
-			<tr>
-	<td>
-	<form method="get" action="./insertCall"> 
-    <button type="submit" class="underbutton" id="returnbutton">登録へ</button></form>
-    </td>
-    <td>
-    <form method="get" action="./editPage"> 
-    <button type="submit" class="underbutton" id="nextbutton">編集へ</button></form>
-    </td>
-    </tr>
-		</table>
+<tr>
+<td>
+<form method="get" action="./insertCall">
+<button type="submit" class="underbutton" id="returnbutton">登録へ</button>
+</form>
+</td>
+<td>
+<form method="get" action="./editPage">
+<button type="submit" class="underbutton" id="nextbutton">編集へ</button>
+</form>
+</td>
+</tr>
+</table>
 </body>
 <%--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
