@@ -10,10 +10,12 @@
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style.css">
 
 </head>
- <body bgcolor="#87cefa">
+ <body bgcolor="#87cefa"> 
+      <div class="entirepage">  
         <div class="psi"> 
-                <img src="./img/mojisuover.svg" width=800 height=400>
+                <img src="./img/mojisuover.jpg" >
 		</div>
+	  </div>
 		<div class="area">
 				<a href="javascript:history.back()"><button class ="button" type="button">戻る</button></a>
         </div>

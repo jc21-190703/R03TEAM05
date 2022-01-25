@@ -10,12 +10,14 @@
 
 </head>
  <body bgcolor="#87cefa">
+     <div class="entirepage">
         <div class="psi"> 
-                <p><img src="./img/mojisuover.svg" width=800 height=400></p>
-                <p><img src="./img/NotEnteredError.svg" width=800 height=400></p>
-                <p><img src="./img/NumberOver.svg" width=1000 height=400></p>
-                <p><img src="./img/UnexpectedError.svg" width=1000 height=400></p>
+                <p><img src="./img/mojisuover.jpg"></p>
+                <p><img src="./img/NotEnteredError.jpg"></p>
+                <p><img src="./img/NumberOver.jpg"></p>
+                <p><img src="./img/UnexpectedError.jpg"></p>
 		</div>
+	 </div>
 		<div class="area">
 				<a href="javascript:history.back()"><button class ="button" type="button">戻る</button></a>
         </div>

@@ -1,8 +1,13 @@
 @charset "UTF-8";
+.entirepage{
+	width:660px;
+	margin:0 auto;
+}
 .psi{
-	text-align:center;
+	
 	position: relative;
 	top:180px;
+    width:50vw;
 }
 .area{
 	text-align:center;
