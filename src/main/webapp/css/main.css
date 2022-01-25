@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.header{
+	 text-align: center;
+}
+
+.tableheader{
+	background:#1e90ff;
+	color:white;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.foodtable th, .foodtable td {
+	border: solid 1px black;
+}
+
+.underbutton{
+	width:150px;
+	height:75px;
+	padding:20px;
+	margin-bottom:50px;
+	border:black 2px solid;
+	text-decoration:nome;
+	font-size:32px;
+	display:inline-block;
+}
+
+#returnbutton{
+	background:#6495ed;
+}
+
+#nextbutton{
+	background:#1e90ff;
+}
