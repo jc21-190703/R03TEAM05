@@ -42,6 +42,7 @@ public class EditCheck extends HttpServlet {
 			
 			List<String[]>list=new ArrayList<>();
 			
+			
 		}catch(Exception e) {
 			e.printStackTrace(out);
 		}
