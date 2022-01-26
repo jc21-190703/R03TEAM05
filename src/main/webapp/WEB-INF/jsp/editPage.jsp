@@ -467,7 +467,7 @@ String quantity16=foodDate16.getQuantity();
 
 		<table align="center">
 			<tr>
-				<td><a href="http://localhost:8080/Refrigerator/A"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
+				<td><a href="http://localhost:8080/Refrigerator/main"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
 				<td><button type="submit" class="underbutton" id="nextbutton">決定</button></td>
 			</tr>
 		</table>
