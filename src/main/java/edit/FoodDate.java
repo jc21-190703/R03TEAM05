@@ -29,19 +29,35 @@ public class FoodDate {
 	
 //set
 	public void setIconNo(String iconNo) {
-		this.iconNo=iconNo;
+		if(iconNo==null) {
+			this.iconNo=null;
+		}else {
+			this.iconNo=iconNo;
+		}
 	}
 	public void setFoodName(String foodName) {
-		this.foodName=foodName;
+		if(foodName!=null) {
+			this.foodName=foodName;
+		}else {
+			this.foodName=null;
+		}
 	}
 	public void setExpryDate(String expryDate) {
-		this.expryDate=expryDate;
+		if(expryDate!=null) {
+			this.expryDate=expryDate;
+		}else {
+			this.expryDate=null;
+		}
 	}
 	public void setQuantity(String quantity) {
-		this.quantity=quantity;
+		if(quantity!=null) {
+			this.quantity=quantity;
+		}else {
+			this.quantity=null;
+		}
 	}
 	
 	public void print() {
-		System.out.println(this.iconNo+this.foodName+this.expryDate+this.quantity);
+		System.out.println(this.iconNo+" "+this.foodName+" "+this.expryDate+" "+this.quantity);
 	}
 }
