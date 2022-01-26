@@ -43,9 +43,9 @@ public class InsertServelet extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
-			PreparedStatement st = connection.prepareStatement("insert into mst_food(foodNo,iconNo,foodName,expryDate,quantity) values (null,?,?,?,?)");
+			PreparedStatement st = connection.prepareStatement("insert into sub_food(foodNo,iconNo,foodName,expryDate,quantity) values (null,?,?,?,?)");
 			
-			//connection.setAutoCommit(false);
+			
 			
 			String p00g = request.getParameter("p00s");
 			String name = request.getParameter("name");
@@ -128,7 +128,7 @@ public class InsertServelet extends HttpServlet {
 			//PreparedStatement st =  connection.prepareStatement("Insert INTO mst_food(iconNo,foodNo,expryDate,quantity) values (?,?,?,?)");
 			;
 			
-		
+			
 			
 			List<String[]> list = new ArrayList<>();
 			if(name !="") {
@@ -287,6 +287,7 @@ public class InsertServelet extends HttpServlet {
 				
 							st.close();
 							connection.close();
+							
 				
 			
 			

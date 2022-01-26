@@ -51,8 +51,15 @@ public class A extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connection=DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
+			
 			java.sql.Statement st =connection.createStatement();
+			
+			
+			
+			
 			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
+			
+			
 
 			List<String[]> list = new ArrayList<>();
 			while( result.next() == true) {
@@ -83,10 +90,10 @@ public class A extends HttpServlet {
 				
 			
 		} catch (ClassNotFoundException e ) {
-			// TODO 自動生成された catch ブロック
+			
 			e.printStackTrace();
 		} catch (SQLException e ) {
-			// TODO 自動生成された catch ブロック
+			
 			e.printStackTrace();
 		}
 	}
