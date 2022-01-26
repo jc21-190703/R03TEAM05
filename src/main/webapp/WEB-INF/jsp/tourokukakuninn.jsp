@@ -61,7 +61,7 @@ if (optList.isPresent()) {
 				<button type="submit" class="btn btn-primary">戻る</button>
 			</form>
 
-			<form action="<%=request.getContextPath()%>/A">
+			<form action="<%=request.getContextPath()%>//tourokukakunin">
 				<button type="submit" class="btn btn-primary">決定</button>
 			</form>
 		</div>
