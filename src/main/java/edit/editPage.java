@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -44,26 +45,18 @@ public class editPage extends HttpServlet {
 			java.sql.Statement st =connection.createStatement();
 			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
 		
-		List<String[]>list=new ArrayList<>();
-		while(result.next()==true) {
-			String[] s=new String[4];
-			s[0]=result.getString("iconNo");
-			s[1]=result.getString("foodName");
-			s[2]=result.getString("expryDate");
-			s[3]=result.getString("quantity");
-			list.add(s);
-		}
+			
+			
+			for(String[] s : list) {
+				System.out.println(s[0]);
+				System.out.println(s[1]);
+				System.out.println(s[2]);
+				System.out.println(s[3]);
+			}
 		
-		for(String[] s:list) {
-			System.out.println(s[0]);
-			System.out.println(s[1]);
-			System.out.println(s[2]);
-			System.out.println(s[3]);
-		}
-		
-		request.setAttribute("list", list);
-		request.getRequestDispatcher("/WEB-INF/jsp/editPage.jsp")
-		.forward(request, response);
+			request.setAttribute("list", list);
+			request.getRequestDispatcher("/WEB-INF/jsp/editPage.jsp")
+			.forward(request, response);
 		}catch(Exception e) {
 			e.printStackTrace(out);
 		}

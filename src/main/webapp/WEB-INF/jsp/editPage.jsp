@@ -50,8 +50,8 @@ if(optList.isPresent()){
 					<th>数</th>
 				</tr>
 			</thead>
-			<tbody>
-				<% for (String[] s : list){ %>
+			
+				<tbody>
     				<tr>
 						<td>
 							<label for="p00s" class="showHand" id="p00g">＋</label> 
@@ -59,7 +59,7 @@ if(optList.isPresent()){
 							<input type="text" name="iconNo" id="p00s" onclick="showDialog(event);"class="z">
 							<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 						</td>
-						<td><input type="text" value=<%=s[1] %> name="foodName" id="foodmane"></td>
+						<td><input type="text" value=<%=list[0][0] %> name="foodName" id="foodmane"></td>
 						<td><input type="date" value=<%=s[2] %> name="expryDate" id="expryDate"></td>
 						<td>
 							<div class="pmbutton">
@@ -70,8 +70,9 @@ if(optList.isPresent()){
   							<script src="pmbutton.js"></script>
 						</td>
     				</tr>
-	    		<%} %>
-			</tbody>
+    				
+    				
+    			</tbody>
 		</table>
 
 		<table align="center">
