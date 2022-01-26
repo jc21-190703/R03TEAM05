@@ -1,3 +1,5 @@
+package main;
+
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -13,28 +15,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import java.io.IOException;
-//import java.sql.Connection;
-//import javax.servlet.ServletException;
-//import javax.servlet.annotation.WebServlet;
-//import javax.servlet.http.HttpServlet;
-//import javax.servlet.http.HttpServletRequest;
-//import javax.servlet.http.HttpServletResponse;
-//import java.sql.SQLException;
-//import java.util.ArrayList;
-//import java.sql.DriverManager;
+
 
 /**
  * Servlet implementation class A
  */
-@WebServlet("/A")
-public class A extends HttpServlet {
+@WebServlet("/main")
+public class main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public A() {
+    public main() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -43,23 +36,13 @@ public class A extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//final String driverName = "oracle.jdbc.driver.OracleDriver";
-		//final String url = "jdbc:oracle:thin:@192.168.54.222:1521/pdborcl";
-		//final String id = "OUBO";
-		//final String pass = "Oubo2021";
+	
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connection=DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
-			
 			java.sql.Statement st =connection.createStatement();
-			
-			
-			
-			
 			ResultSet result = st.executeQuery("select iconNo,foodName,expryDate,quantity from mst_food");
-			
-			
 
 			List<String[]> list = new ArrayList<>();
 			while( result.next() == true) {
@@ -90,10 +73,10 @@ public class A extends HttpServlet {
 				
 			
 		} catch (ClassNotFoundException e ) {
-			
+			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		} catch (SQLException e ) {
-			
+			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 	}
