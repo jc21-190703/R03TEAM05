@@ -40,7 +40,7 @@ if(optList.isPresent()){
 		<P><img src="./img/editHeader.svg"></P>
 	</div>
 	
-	<form method="get" action="あとでいれます" class="inputable">
+	<form method="get" action="editcheck" class="inputable">
 		<table class="foodtable" align="center">
 			<thead class="tableheader">
 				<tr>
@@ -56,7 +56,7 @@ if(optList.isPresent()){
 						<td>
 							<label for="p00s" class="showHand" id="p00g">＋</label> 
 							<script src="<%=request.getContextPath()%>/js/Icon/icon.js"></script> 
-							<input type="text" id="p00s" onclick="showDialog(event);"class="z">
+							<input type="text" name="iconNo" id="p00s" onclick="showDialog(event);"class="z">
 							<script	src="<%=request.getContextPath()%>/js/Icon/icon.js"></script>
 						</td>
 						<td><input type="text" value=<%=s[1] %> name="foodName" id="foodmane"></td>
@@ -64,7 +64,7 @@ if(optList.isPresent()){
 						<td>
 							<div class="pmbutton">
     							<button class="button" id="down">－</button>
-    							<input type="text" value=<%=s[3] %> class="inputtext" id="textbox">
+    							<input type="text" value=<%=s[3] %> name="quantity" class="inputtext" id="textbox">
     							<button class="button" id="up">＋</button>
   							</div>
   							<script src="pmbutton.js"></script>

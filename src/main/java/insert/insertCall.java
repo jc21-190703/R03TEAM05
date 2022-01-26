@@ -30,8 +30,14 @@ public class insertCall extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
+		try {
+			
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/insert.jsp");
 		dispatcher.forward(request, response);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
