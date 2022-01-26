@@ -10,9 +10,11 @@
 
 </head>
  <body bgcolor="#87cefa">
+      <div class="entirepage">
         <div class="psi"> 
-                <img src="./img/NotEnteredError.svg" width=800 height=400>
+                <img src="./img/NotEnteredError.jpg" >
 		</div>
+	  </div>
 		<div class="area">
 				<a href="javascript:history.back()"><button class ="button" type="button">戻る</button></a>
         </div>

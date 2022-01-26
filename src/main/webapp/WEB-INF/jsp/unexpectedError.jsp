@@ -11,9 +11,11 @@
 
 </head>
  <body bgcolor="#87cefa">
-        <div class="psi"> 
-                <img src="./img/UnexpectedError.svg" width=1000 height=400>
+      <div class="entirepage">
+        <div class="psi" > 
+                <img src="./img/UnexpectedError.jpg">
 		</div>
+	  </div>
 		<div class="area">
 				<a href="javascript:history.back()"><button class ="button" type="button">戻る</button></a>
         </div>
