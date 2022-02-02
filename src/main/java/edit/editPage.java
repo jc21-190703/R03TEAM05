@@ -208,7 +208,7 @@ public class editPage extends HttpServlet {
 			request.setAttribute("foodDate15", foodDate15);
 			request.setAttribute("foodDate16", foodDate16);
 			
-			request.getRequestDispatcher("/WEB-INF/jsp/editPage.jsp")
+			request.getRequestDispatcher("/checkjsp/editPage.jsp")
 			.forward(request, response);
 		}catch(Exception e) {
 			e.printStackTrace(out);

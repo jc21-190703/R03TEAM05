@@ -146,7 +146,7 @@ String quantity16=foodDate16.getQuantity();
 		<P><img src="./img/editHeader.svg"></P>
 	</div>
 	
-	<form method="get" action="editcheck" class="inputable">
+	<form method="get" action="checkjsp/editCheck.jsp" class="inputable">
 		<table class="foodtable" align="center">
 			<thead class="tableheader">
 				<tr>
