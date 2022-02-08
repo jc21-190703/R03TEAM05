@@ -7,6 +7,8 @@
 <title>編集確認画面</title>
 </head>
 
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/check.css">
+
 <% String foodName1=request.getParameter("foodName1"); %>
 <% String expryDate1=request.getParameter("expryDate1"); %>
 <% String quantity1=request.getParameter("quantity1"); %>
@@ -72,8 +74,8 @@
 <% String quantity16=request.getParameter("quantity16"); %>
 
 <body bgcolor="#87cefa">
-	<table align="center">
-		<thead >
+	<table class="checktable" border="1" align="center">
+		<thead>
 				<tr>
 					<th>アイコン</th>
 					<th>名前</th>
@@ -199,7 +201,10 @@
 	</table>
 	
 	<table align="center">
-		
+		<tr>
+			<td><a href="http://localhost:8080/Refrigerator/editPage"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
+			<td><a href="http://localhost:8080/Refrigerator/main"><button class="underbutton" id="nextbutton" type="button">決定</button></a></td>
+		</tr>
 	</table>
 
 </body>
