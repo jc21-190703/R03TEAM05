@@ -40,7 +40,7 @@
 		<div class="popup-back" onclick="popupClose();"></div>
 	</div>
 	<form action="<%=request.getContextPath()%>/InsertServelet">
-		<table align="center" border="1" style="border-collapse: collapse">
+		<table align="center" border="1" style="border-collapse: collapse" bgcolor="#ffffff">
 			<thead class="tableheader">
 				<tr>
 					<th>アイコン</th>
