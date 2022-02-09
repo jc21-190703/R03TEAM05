@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -30,7 +26,7 @@ public class tourokukakunin extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.54.191/webapp","webapp","webapp");
-		PreparedStatement st = connection.prepareStatement("insert into mst_food(foodNo,iconNo,foodName,expryDate,quantity) select foodNo,iconNo,foodName,expryDate,quantity from sub_food");
+		PreparedStatement st = connection.prepareStatement("insert into mst_food(foodNo,iconNo,foodName,expryDate,quantity) select foodNo,iconNo,foodName,expryDate,quantity from sub_food;");
 			
 			
 			st.executeUpdate();

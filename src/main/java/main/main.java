@@ -67,7 +67,7 @@ public class main extends HttpServlet {
 				
 				//String value1=request.getParameter("value1");
 				request.setAttribute("list", list);
-				request.getRequestDispatcher("/A.jsp")
+				request.getRequestDispatcher("/WEB-INF/jsp/main.jsp")
 				.forward(request, response);
 				
 				
