@@ -13,6 +13,7 @@
 </head>
 <%
 Optional<List<String[]>>optList = Optional.ofNullable((List<String[]>)request.getAttribute("list"));
+request.getAttribute("name");
 List<String[]> list=new ArrayList<>();
 if(optList.isPresent()){
 	list = optList.get();
@@ -35,6 +36,7 @@ if(optList.isPresent()){
   
   <% for (String[] s : list){ %>
     <tr>
+  
 <td><%=s[0] %></td>
 <td><%=s[1] %></td>
 <td><%=s[2] %></td>
@@ -61,8 +63,4 @@ if(optList.isPresent()){
 </tr>
 </table>
 </body>
-<%--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
---%>
 </html>

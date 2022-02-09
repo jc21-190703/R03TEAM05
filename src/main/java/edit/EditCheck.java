@@ -35,12 +35,7 @@ public class EditCheck extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out=response.getWriter();
 		try {
-			String iconNo=request.getParameter("iconNo");
-			String foodName=request.getParameter("foodName");
-			String expryDate=request.getParameter("expryDate");
-			String quantity=request.getParameter("quantity");
 			
-			List<String[]>list=new ArrayList<>();
 			
 		}catch(Exception e) {
 			e.printStackTrace(out);
