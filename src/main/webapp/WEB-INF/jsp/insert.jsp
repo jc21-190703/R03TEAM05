@@ -15,50 +15,32 @@
 		<div class="popup-inner" id="wpopup-inner">
 			<img src="<%=request.getContextPath()%>/img/food/beef.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/beef.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/broccoli.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/broccoli.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/cabbage.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/cabbage.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/carrot.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/carrot.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/chicken.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/chicken.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/chinese cabbage.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/chinese cabbage.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/croquette.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/croquette.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/cucumber.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/cucumber.jpg');"> 
+				onclick="returnData('<%=request.getContextPath()%>/img/food/chicken.jpg');">    
 			<img src="<%=request.getContextPath()%>/img/food/egg.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/egg.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/fish.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/fish.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/juice.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/juice.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/ketchup.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/ketchup.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/mayonnais.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/mayonnais.jpg');"> 
+				onclick="returnData('<%=request.getContextPath()%>/img/food/juice.jpg');">   
 			<img src="<%=request.getContextPath()%>/img/food/milk.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/milk.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/mushroom.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/mushroom.jpg');"> 
+				onclick="returnData('<%=request.getContextPath()%>/img/food/milk.jpg');">  
 			<img src="<%=request.getContextPath()%>/img/food/onion.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/onion.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/pork.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/pork.jpg');"> 
 			<img src="<%=request.getContextPath()%>/img/food/radish.jpg"
 				onclick="returnData('<%=request.getContextPath()%>/img/food/radish.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/sausage.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/sausage.jpg');"> 
-			<img src="<%=request.getContextPath()%>/img/food/yogurt.jpg"
-				onclick="returnData('<%=request.getContextPath()%>/img/food/yogurt.jpg');"> 
 			<button type="button" onclick="popupClose();">キャンセル</button>
 		</div>
 		<div class="popup-back" onclick="popupClose();"></div>
 	</div>
 	<form action="<%=request.getContextPath()%>/InsertServelet">
-		<table align="center" border="1" style="border-collapse: collapse">
+		<table align="center" border="1" style="border-collapse: collapse" bgcolor="#ffffff">
 			<thead class="tableheader">
 				<tr>
 					<th>アイコン</th>
@@ -319,7 +301,7 @@
 		</table>
 		<table align="center">
 			<tr>
-		<td><a href="http://localhost:8080/Refrigerator/A"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
+		<td><a href="http://localhost:8080/Refrigerator/main"><button class="underbutton" id="returnbutton" type="button">戻る</button></a></td>
 		<td><button type="submit" class="underbutton" id="nextbutton">決定</button></td>
 			</tr>
 		</table>

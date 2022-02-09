@@ -1,0 +1,27 @@
+.tableheader{
+	background:#1e90ff;
+	color:white;
+}
+
+.buttontable{
+	text-align:center;
+}
+
+.underbutton{
+	width:150px;
+	height:75px;
+	padding:20px;
+	margin-bottom:50px;
+	border:black 2px solid;
+	text-decoration:nome;
+	font-size:32px;
+	display:inline-block;
+}
+
+#returnbutton{
+	background:#6495ed;
+}
+
+#nextbutton{
+	background:#1e90ff;
+}
