@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/insertcheck.css">
 
-<title>OUBO</title>
+<title>登録確認</title>
 </head>
 <%
 Optional<List<String[]>> optList = Optional.ofNullable((List<String[]>) request.getAttribute("list"));
@@ -24,7 +24,7 @@ if (optList.isPresent()) {
 %>
 <body bgcolor="#87cefa">
 
-	><h1 align="center">登録内容の確認</h1>
+	<h1 align="center">登録内容の確認</h1>
 	<table align="center" border="1" style="border-collapse: collapse" bgcolor="#ffffff">
 			<thead class="tableheader">
 				<tr>
@@ -62,10 +62,10 @@ if (optList.isPresent()) {
 			<table align="center">
 			<tr>
 			<td><form action="<%=request.getContextPath()%>/insertanddelete">
-				<button class="underbutton" id="returnbutton" type="button">戻る</button>
+				<button class="underbutton" id="returnbutton" type="submit">戻る</button>
 			</form></td>
 
-			<td><form action="<%=request.getContextPath()%>//tourokukakunin">
+			<td><form action="<%=request.getContextPath()%>/tourokukakunin">
 				<button type="submit" class="underbutton" id="nextbutton">決定</button>
 			</form></td>
 			</tr>
