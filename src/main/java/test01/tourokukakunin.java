@@ -39,7 +39,7 @@ public class tourokukakunin extends HttpServlet {
 			connection.close();
 			
 			
-			request.getRequestDispatcher("/A").forward(request, response);
+			request.getRequestDispatcher("/main").forward(request, response);
 			//request.getRequestDispatcher("/WEB-INF/jsp/insert.jsp").forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
