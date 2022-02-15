@@ -75,7 +75,7 @@
 
 <body bgcolor="#87cefa">
 	<table class="checktable" border="1" align="center">
-		<thead>
+		<thead class="tablehead">
 				<tr>
 					<th>アイコン</th>
 					<th>名前</th>

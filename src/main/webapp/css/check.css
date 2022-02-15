@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.tablehead{
+	background:#1e90ff;
+	color:white;
+}
+
 .checktable {
   border-collapse: collapse;
 }
