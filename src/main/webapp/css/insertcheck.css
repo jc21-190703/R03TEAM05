@@ -1,16 +1,10 @@
-@charset "UTF-8";
-
-.tablehead{
+.tableheader{
 	background:#1e90ff;
 	color:white;
 }
 
-.checktable {
-  border-collapse: collapse;
-}
-
-.checktable th, .checktable td {
-  border: solid 1px black;
+.buttontable{
+	text-align:center;
 }
 
 .underbutton{

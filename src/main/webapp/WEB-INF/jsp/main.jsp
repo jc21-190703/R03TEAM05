@@ -22,7 +22,7 @@ if(optList.isPresent()){
 <body bgcolor="#87cefa">
 
 <H1 align="center">冷蔵庫管理</H1>
-<table class="table" align="center" border="1" style="border-collapse: collapse"">
+<table class="table" align="center" border="1" style="border-collapse: collapse" bgcolor="#ffffff">
 
   <thead class="tableheader">
 				<tr>

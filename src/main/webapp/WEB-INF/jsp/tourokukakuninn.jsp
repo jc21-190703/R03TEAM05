@@ -10,13 +10,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/css/insertcheck.css">
 
-<title>OUBO</title>
+<title>登録確認</title>
 </head>
 <%
 Optional<List<String[]>> optList = Optional.ofNullable((List<String[]>) request.getAttribute("list"));
@@ -25,20 +22,30 @@ if (optList.isPresent()) {
 	list = optList.get();
 }
 %>
-<body>
+<body bgcolor="#87cefa">
 
-	<H1>Refrigerator</H1>
-	<table class="table">
-		<thead>
-			<th>登録内容</th>
-		</thead>
-		<tbody>
+	<h1 align="center">登録内容の確認</h1>
+	<table align="center" border="1" style="border-collapse: collapse" bgcolor="#ffffff">
+			<thead class="tableheader">
+				<tr>
+					<th>アイコン</th>
+					<th>名前</th>
+					<th>期限</th>
+					<th>数</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+		
 
 			<%
 			for (String[] a : list) {
 			%>
 			<tr>
-				<td><%=Arrays.toString(a)%></td>
+				<td><%=a[0] %></td>
+				<td><%=a[1] %></td>
+				<td><%=a[2] %></td>
+				<td><%=a[3] %></td>
 			</tr>
 			<%
 			}
@@ -52,31 +59,22 @@ if (optList.isPresent()) {
 		<div class="col"></div>
 		<div class="col-8">
 
+			<table align="center">
+			<tr>
+			<td><form action="<%=request.getContextPath()%>/insertanddelete">
+				<button class="underbutton" id="returnbutton" type="submit">戻る</button>
+			</form></td>
 
-
-
-			<h2>入力内容の確認</h2>
-			<form action="<%=request.getContextPath()%>/insertanddelete">
-				
-				<button type="submit" class="btn btn-primary">戻る</button>
-			</form>
-
-			<form action="<%=request.getContextPath()%>//tourokukakunin">
-				<button type="submit" class="btn btn-primary">決定</button>
-			</form>
+			<td><form action="<%=request.getContextPath()%>/tourokukakunin">
+				<button type="submit" class="underbutton" id="nextbutton">決定</button>
+			</form></td>
+			</tr>
+			</table>
 		</div>
 		<div class="col"></div>
 	</div>
 
 
 </body>
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-	integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-	integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-	crossorigin="anonymous"></script>
 
 </html>
